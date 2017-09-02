@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "test description",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Micah Simmons",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.32.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-oauth-server": "^2.0.0-b1",
+    "fn.js": "^0.8.1",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^1.4.1",
+    "node-oauth2-server": "^2.4.0",
+    "nodemailer": "^3.1.7",
+    "oauth2-provider": "^1.3.0",
+    "oauth2-server": "^2.4.1",
+    "sequelize": "^4.7.5",
+    "socket.io": "^1.7.3"
+  }
+}
