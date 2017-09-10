@@ -1,6 +1,6 @@
 //MARK: -------- REQUIRE MODULES
 
-const port = 9001
+const port = 9000
 const bodyParser = require('body-parser')
 const express = require('express')
 const expressApp = express()
