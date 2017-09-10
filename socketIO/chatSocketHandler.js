@@ -1,4 +1,9 @@
+//MARK: ---------- MODULES AND CONSTANTS
+
 const fn = require('fn.js')
+const CHAT_MESSAGE_EVENT_KEY = 'CHAT_MESSAGE'
+
+//MARK: ---------- MODULES AND CONSTANTS
 
 /**
  * This module handles subscribing to chat message socket events.
@@ -28,7 +33,7 @@ module.exports = messagesDBHelper => {
  */
 function initChatConnection(onMessageReceived, {socketIOClient, socket}) {
 
-  socket.on('chat message', receivedMessage => {
+  socket.on(CHAT_MESSAGE_EVENT_KEY, receivedMessage => {
 
   console.log('receivedMessage is: ', receivedMessage)
 
@@ -52,6 +57,6 @@ function initChatConnection(onMessageReceived, {socketIOClient, socket}) {
 
       console.log('savedMessage is: ', savedMessage)
 
-       socketIOClient.emit('chat message', savedMessage)
+       socketIOClient.emit(CHAT_MESSAGE_EVENT_KEY, savedMessage)
      })
 }
