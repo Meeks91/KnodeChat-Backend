@@ -1,4 +1,4 @@
-//MARK: -------- REQUIRE MODULES
+//MARK: -------- MODULES & GLOBALS
 
 const port = 9000
 const bodyParser = require('body-parser')
@@ -12,7 +12,7 @@ const chatSocketHandler = require('./socketIO/chatSocketHandler')(messagesDBHelp
 const chatMessengerRouteMethods =  require('./chatMessengerAPI/chatMessengerRouteMethods')(messagesDBHelper)
 const chatMessengerRouter = require('./chatMessengerAPI/chatMessengerRouter')(express.Router(), chatMessengerRouteMethods)
 
-//MARK: -------- REQUIRE MODULES
+//MARK: -------- MODULES & GLOBALS
 
 //MARK: -------- INITIALISATION
 
