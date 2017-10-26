@@ -1,2 +1,2 @@
 # knodeChat-Backend
-An instant chat messaging server built using express, socketIO and Sequelize.
+An instant chat messaging server built using Express, SocketIO and Sequelize.
