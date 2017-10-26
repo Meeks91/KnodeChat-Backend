@@ -1,7 +1,7 @@
 module.exports =  () => {
 
    const Sequelize =  require('sequelize')
-   const sequelize = new Sequelize('knodeChatDB', 'root', 'finnigan1', {
+   const sequelize = new Sequelize('knodeChatDB', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
     timezone: '+01:00',
